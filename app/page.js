@@ -8,7 +8,7 @@ export default function SentenceRephraser() {
   const [outputText, setOutputText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const apiKey = process.env.NEXT_PUBLIC_GEMINI_GEMINI_API_KEY;
-
+console.log("hello")
   const handleToneChange = async (tone) => {
     if (!inputText.trim()) {
       alert("Please enter some text first!");
